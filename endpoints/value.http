@@ -1,0 +1,28 @@
+@baseUrl = http://localhost:5000
+@urlPath = api/v1
+
+
+###
+POST {{baseUrl}}/{{urlPath}}/values
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+{
+  "value": 109,
+  "name": "value-9"
+}
+
+
+###
+GET {{baseUrl}}/{{urlPath}}/values
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+
+###
+GET {{baseUrl}}/{{urlPath}}/values/6734cd4701a795cf3bd4cabc
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
