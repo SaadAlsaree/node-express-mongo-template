@@ -4,6 +4,7 @@
   "main": "app.ts",
   "scripts": {
     "dev": "nodemon -r tsconfig-paths/register src/app.ts & ./node_modules/.bin/bunyan",
+    "start": "bun build/src/app.js",
     "lint:check": "eslint 'src/**/*.ts'",
     "lint:fix": "eslint 'src/**/*.ts' --fix",
     "prettier:check": "prettier --check 'src/**/*.{ts,json}'",
