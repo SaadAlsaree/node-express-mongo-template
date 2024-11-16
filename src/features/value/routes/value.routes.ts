@@ -3,7 +3,6 @@ import express, { Router } from 'express';
 import { GetValueController } from '@value/controllers/get-value';
 import { Create } from '@value/controllers/create-value';
 
-
 class ValueRoutes {
   private router = Router();
   /**
@@ -20,7 +19,5 @@ class ValueRoutes {
     return this.router;
   }
 }
-
-
 
 export const valueRoutes: ValueRoutes = new ValueRoutes();

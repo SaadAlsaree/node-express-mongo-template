@@ -6,7 +6,6 @@ import { addValueSchema } from '@value/schema/value';
 import { valueService } from '@service/db/value.service';
 import type { IValue } from '@value/interfaces/value.interface';
 
-
 export class Create {
   @joiValidation(addValueSchema)
   public async value(req: Request, res: Response): Promise<void> {
@@ -14,12 +13,13 @@ export class Create {
 
     const valueCreate: IValue = {
       name,
-      value
+      value,
     } as IValue;
 
     await valueService.createValue(valueCreate);
 
-    res.status(HTTP_STATUS.CREATED).json({ message: 'Value created successfully ' });
+    res
+      .status(HTTP_STATUS.CREATED)
+      .json({ message: 'Value created successfully ' });
   }
-
 }

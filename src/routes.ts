@@ -1,5 +1,5 @@
 import { Application } from 'express';
-import {valueRoutes} from "@value/routes/value.routes";
+import { valueRoutes } from '@value/routes/value.routes';
 
 const BASE_PATH = '/api/v1';
 
