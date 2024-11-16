@@ -9,7 +9,8 @@ class ValueService {
 
   // get all values use aggregate
   public async getValues(): Promise<IValue[]> {
-    const values: IValue[] = (await ValueModel.aggregate([
+    let values: IValue[];
+    values = (await ValueModel.aggregate([
       {
         $project: {
           _id: 1,
@@ -24,7 +25,8 @@ class ValueService {
 
   // get value by id
   public async getValueById(valueId: string): Promise<IValue> {
-    const value: IValue = (await ValueModel.findById(valueId)) as IValue;
+    let value: IValue;
+    value = (await ValueModel.findById(valueId)) as IValue;
 
     return value;
   }
