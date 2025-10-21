@@ -501,7 +501,7 @@ npm test -- --coverage
 
 <div align="center">
 
-**صُنع بـ ❤️ للمطورين العرب**
+**صُنع بـ ❤️ S.A**
 
 [التوثيق](./DOCUMENTATION.md) • [المعمارية](./ARCHITECTURE.md) • [البدء السريع](./QUICK_START.md) • [AI Prompt](./AI_PROMPT_TEMPLATE.md)
 
